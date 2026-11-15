@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EARTHY — Earth Analog Research &amp; Exploration Platform</title>
+  <meta name="description" content="NASA Space Apps Challenge: Identify Earth locations that are analogous to permanent Moon base locations and Mars.">
+  <link rel="stylesheet" href="css/earthy.css">
+  <link rel="stylesheet" href="css/workstation.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- TOP TOOLBAR -->
+    <header class="top-toolbar">
+      <div class="brand-section">
+        <span class="brand-title">EARTHY</span>
+        <span class="badge accent">NASA Space Apps Challenge 2026</span>
+      </div>
+
+      <!-- MAIN NAVIGATION TABS -->
+      <nav class="main-nav-tabs" aria-label="Main Navigation">
+        <button class="nav-tab active" data-view="view-overview" type="button">Overview</button>
+        <button class="nav-tab" data-view="view-discovery" type="button">Discovery Engine</button>
+        <button class="nav-tab" data-view="view-comparison" type="button">Site Comparison</button>
+        <button class="nav-tab" data-view="view-analysis" type="button">Scientific Analysis</button>
+        <button class="nav-tab" data-view="view-methodology" type="button">Methodology &amp; Data</button>
+      </nav>
+
+      <!-- TOOLBAR CONTROLS -->
+      <div class="toolbar-controls">
+        <div class="planet-switcher">
+          <button class="planet-btn active" data-planet="mars" type="button">Mars</button>
+          <button class="planet-btn" data-planet="moon" type="button">Moon</button>
+        </div>
+
+        <span class="badge terracotta" id="active-target-pill">Jezero Crater</span>
+
+        <div class="export-dropdown-wrapper">
+          <button class="btn secondary" id="export-btn" type="button">Export ▾</button>
+          <div class="export-menu">
+            <button class="export-format-btn" data-format="geojson" type="button">GeoJSON (RFC 7946)</button>
+            <button class="export-format-btn" data-format="csv" type="button">CSV Table</button>
+            <button class="export-format-btn" data-format="markdown" type="button">Research Report (MD)</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content-area">
+
+      <!-- VIEW 1: OVERVIEW -->
+      <section class="view-panel active" id="view-overview">
+        <div class="overview-container">
+          <div class="hero-section">
+            <div class="eyebrow">Planetary Surface Mission Testing</div>
+            <h1 class="hero-title">Identifying Earth environments analogous to permanent Moon base locations and Mars.</h1>
+            <p class="hero-lead">
+              Before landing astronauts or autonomous rovers on extraterrestrial regolith, mobility systems, drilling rigs, and habitat life support must be verified in terrestrial environments that physically replicate lunar and Martian surface conditions.
+            </p>
+            <div style="margin-top: 18px;">
+              <button class="btn primary" id="cta-discovery" type="button">Launch Discovery Engine →</button>
+            </div>
+          </div>
+
+          <!-- Problem Statement Card -->
+          <div class="problem-card">
+            <div class="eyebrow">NASA Challenge Objective</div>
+            <p class="statement-text">
+              "Identify Earth locations that are analogous to permanent Moon base locations and Mars."
+            </p>
+            <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">
+              EARTHY addresses this challenge through calibrated satellite datasets (Copernicus DEM, LRO LOLA, MGS MOLA, MERRA-2, MODIS), Zero-Veto biophysical gating, 1st Wasserstein distribution metrics, and a decoupled Dual-Score framework separating hardware analogy from permanent settlement suitability.
+            </p>
+          </div>
+
+          <!-- Planetary Destinations -->
+          <div style="margin-top: 28px;">
+            <div class="eyebrow">Reference Exploration Targets</div>
+            <div class="target-cards-grid" id="target-cards-container">
+              <!-- Dynamically populated by app.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 2: DISCOVERY ENGINE -->
+      <section class="view-panel" id="view-discovery">
+        <div class="discovery-grid">
+
+          <!-- Left Filter Drawer -->
+          <aside class="filter-drawer">
+            <div class="filter-group">
+              <label for="target-select" class="filter-label">Planetary Reference Target</label>
+              <select id="target-select" class="form-select">
+                <!-- Populated by app.js -->
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="mission-profile" class="filter-label">Mission Profile</label>
+              <select id="mission-profile" class="form-select">
+                <option value="rover_mobility" selected>Autonomous Rover Mobility</option>
+                <option value="drill_sampling">Subsurface Coring &amp; Drilling</option>
+                <option value="crewed_base">Permanent Human Habitat Base</option>
+                <option value="spectroscopy">Spectroscopy &amp; Mineralogy</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="top-k" class="filter-label">Candidate Limit</label>
+              <select id="top-k" class="form-select">
+                <option value="5">Top 5 Candidates</option>
+                <option value="10" selected>Top 10 Candidates</option>
+                <option value="15">Top 15 Candidates</option>
+                <option value="25">Top 25 Candidates</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-checkbox-label">
+                <input type="checkbox" id="zero-veto-toggle" checked>
+                <span>Enforce Zero-Veto Biophysical Gating</span>
+              </label>
+              <div class="filter-hint">Vetox cells with NDVI > 0.25 (vegetation root shear) or precipitation > 350 mm/yr.</div>
+            </div>
+
+            <hr class="drawer-divider">
+            <div class="eyebrow" style="margin-bottom: 12px;">Criteria Sensitivity Weights</div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Slope Gradient</span>
+                <span class="mono" id="label-slope-weight">1.40</span>
+              </div>
+              <input type="range" class="weight-slider" id="slope-weight" data-param="slope" min="0.1" max="3.0" step="0.1" value="1.4">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Surface Roughness</span>
+                <span class="mono" id="label-roughness-weight">1.40</span>
+              </div>
+              <input type="range" class="weight-slider" id="roughness-weight" data-param="roughness" min="0.1" max="3.0" step="0.1" value="1.4">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Hyper-Aridity</span>
+                <span class="mono" id="label-precip-weight">1.20</span>
+              </div>
+              <input type="range" class="weight-slider" id="precip-weight" data-param="precipitation" min="0.1" max="3.0" step="0.1" value="1.2">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Thermal Climatology</span>
+                <span class="mono" id="label-temp-weight">0.80</span>
+              </div>
+              <input type="range" class="weight-slider" id="temp-weight" data-param="mean_annual_temperature" min="0.1" max="3.0" step="0.1" value="0.8">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Abiotic Ground (NDVI)</span>
+                <span class="mono" id="label-veg-weight">1.50</span>
+              </div>
+              <input type="range" class="weight-slider" id="veg-weight" data-param="vegetation" min="0.1" max="3.0" step="0.1" value="1.5">
+            </div>
+          </aside>
+
+          <!-- Middle Viewport Area -->
+          <main class="viewport-column">
+            <div class="viewport-toolbar">
+              <div class="viewport-modes">
+                <button class="viewport-mode-btn active" data-mode="2d" type="button">2D Global Map</button>
+                <button class="viewport-mode-btn" data-mode="globe" type="button">3D Planetary Globe</button>
+                <button class="viewport-mode-btn" data-mode="terrain" type="button">3D Local DEM Mesh</button>
+              </div>
+              <div class="viewport-legend">
+                <span class="legend-dot green"></span> High Fidelity
+                <span class="legend-dot sand"></span> Moderate
+                <span class="legend-dot red"></span> Low / Vetoed
+              </div>
+            </div>
+
+            <div class="viewport-container">
+              <div id="viewport-2d" class="viewport-canvas-wrapper">
+                <canvas id="map2d-canvas" class="viewport-canvas"></canvas>
+              </div>
+              <div id="viewport-globe" class="viewport-canvas-wrapper" style="display: none;">
+                <canvas id="globe3d-canvas" class="viewport-canvas"></canvas>
+              </div>
+              <div id="viewport-terrain" class="viewport-canvas-wrapper" style="display: none;">
+                <canvas id="terrain3d-canvas" class="viewport-canvas"></canvas>
+              </div>
+            </div>
+
+            <!-- Site Inspector Panel (Bottom of Middle Column) -->
+            <div id="site-inspector" class="site-inspector-panel">
+              <div class="inspector-empty">Select a ranked analog candidate from the right panel to inspect calibrated metrics, dual scores, and 5-Question scientific synthesis.</div>
+            </div>
+          </main>
+
+          <!-- Right Results Column -->
+          <aside class="results-panel">
+            <div class="results-header">
+              <div class="eyebrow">Ranked Terrestrial Analogs</div>
+              <div id="results-loading" style="display: none; font-size: 12px; color: var(--accent-green);">Analyzing…</div>
+            </div>
+            <div id="results-list" class="results-list">
+              <!-- Populated by app.js -->
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- VIEW 3: SITE COMPARISON -->
+      <section class="view-panel" id="view-comparison">
+        <div class="comparison-container">
+          <div class="comparison-header">
+            <div class="eyebrow">Multi-Candidate Side-by-Side Evaluation</div>
+            <h2>Comparative Parameter Matrix &amp; Statistical Slope Distance</h2>
+            <p style="color: var(--text-secondary); font-size: 14px;">
+              Inspect multi-axis radar profiles across selected analog sites. Click candidates in the Discovery Engine to add them to this comparison.
+            </p>
+          </div>
+
+          <div class="comparison-chips-bar" id="comparison-chips">
+            <!-- Populated dynamically -->
+          </div>
+
+          <div class="comparison-grid">
+            <div class="radar-card">
+              <div class="eyebrow">6-Axis Scientific Radar Profile</div>
+              <div class="canvas-container" style="height: 380px;">
+                <canvas id="radar-canvas"></canvas>
+              </div>
+            </div>
+
+            <div class="stats-card">
+              <div class="eyebrow">1st Wasserstein Slope Distance (Earth Mover's Distance)</div>
+              <div class="stat-highlight">
+                <span class="stat-number mono" id="wasserstein-val">—</span>
+                <span class="stat-unit">degrees (angular transportation work)</span>
+              </div>
+              <p style="font-size: 13px; color: var(--text-secondary); margin-top: 10px;">
+                Calculated on continuous slope cumulative distribution functions (CDFs) via SciPy. Direct physical interpretation: degrees of angular shift required to transform the Earth candidate slope morphology into the target planetary reference.
+              </p>
+
+              <hr style="margin: 16px 0; border: none; border-top: 1px solid var(--border-light);">
+
+              <div class="eyebrow">Candidate Attribute Summary</div>
+              <table class="scientific-table mono" style="margin-top: 8px;">
+                <thead>
+                  <tr>
+                    <th>Candidate</th>
+                    <th>Analogy Score</th>
+                    <th>Settlement Score</th>
+                    <th>Uncertainty</th>
+                  </tr>
+                </thead>
+                <tbody id="comparison-tbody">
+                  <!-- Populated by app.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 4: SCIENTIFIC ANALYSIS (THE 5 MANDATORY QUESTIONS) -->
+      <section class="view-panel" id="view-analysis">
+        <div class="analysis-container">
+          <div class="analysis-header">
+            <div class="eyebrow">Planetary Science Justification Framework</div>
+            <h2>The 5 Mandatory Scientific Questions</h2>
+            <p style="color: var(--text-secondary); font-size: 14px;">
+              Structured peer-reviewed scientific justification addressing selection rationale, physical resemblance, environmental divergence, recommended field testing protocols, and non-reproducible Earth invariants.
+            </p>
+          </div>
+
+          <div class="questions-grid">
+            <div class="question-card">
+              <div class="q-badge">Question 1</div>
+              <h3>Why was this Earth location selected?</h3>
+              <p id="sa-q1" class="q-content">Select a candidate in the Discovery Engine to generate the scientific dossier.</p>
+            </div>
+
+            <div class="question-card">
+              <div class="q-badge">Question 2</div>
+              <h3>What specific planetary features does it resemble?</h3>
+              <div id="sa-q2" class="q-content">—</div>
+            </div>
+
+            <div class="question-card">
+              <div class="q-badge">Question 3</div>
+              <h3>What are the key differences and unmodeled planetary conditions?</h3>
+              <div id="sa-q3" class="q-content">—</div>
+            </div>
+
+            <div class="question-card">
+              <div class="q-badge">Question 4</div>
+              <h3>What specific testing protocols and experiments should be conducted here?</h3>
+              <div id="sa-q4" class="q-content">—</div>
+            </div>
+
+            <div class="question-card">
+              <div class="q-badge">Question 5</div>
+              <h3>What are the fundamental physical limitations and invariants?</h3>
+              <div id="sa-q5" class="q-content">—</div>
+            </div>
+
+            <div class="question-card">
+              <div class="q-badge">Provenance</div>
+              <h3>Traceable Data Citations &amp; DOIs</h3>
+              <div id="sa-sources" class="q-content">—</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 5: METHODOLOGY & DATA -->
+      <section class="view-panel" id="view-methodology">
+        <div class="methodology-container">
+          <div class="methodology-header">
+            <div class="eyebrow">Scientific Rigor &amp; Provenance</div>
+            <h2>Verified Dataset Registry &amp; Mathematical Formulations</h2>
+            <p style="color: var(--text-secondary); font-size: 14px;">
+              EARTHY strictly forbids fabricated or random data. All environmental, elevation, and climatology metrics originate from calibrated orbital missions and Earth observation satellites.
+            </p>
+          </div>
+
+          <div class="methodology-section">
+            <div class="eyebrow">Calibrated Datasets Catalogue</div>
+            <table class="scientific-table" style="margin-top: 10px;">
+              <thead>
+                <tr>
+                  <th>Dataset Name</th>
+                  <th>Agency</th>
+                  <th>Spatial Resolution</th>
+                  <th>Extracted Parameters</th>
+                  <th>DOI / Archive Product</th>
+                </tr>
+              </thead>
+              <tbody id="datasets-tbody">
+                <!-- Populated by app.js -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="methodology-section" style="margin-top: 32px;">
+            <div class="eyebrow">Mathematical &amp; Algorithmic Formulations</div>
+            <div class="math-grid">
+              <div class="math-card">
+                <h4>2nd-Order Central Difference Slope Gradient</h4>
+                <p class="mono text-muted">
+                  ∂z/∂x ≈ (z[i, j+1] - z[i, j-1]) / (2·Δx)<br>
+                  ∂z/∂y ≈ (z[i+1, j] - z[i-1, j]) / (2·Δy)<br>
+                  θ_slope = arctan(√( (∂z/∂x)² + (∂z/∂y)² )) · (180 / π)
+                </p>
+              </div>
+              <div class="math-card">
+                <h4>1st Wasserstein Distance on Slope Distributions</h4>
+                <p class="mono text-muted">
+                  W₁(u, v) = ∫ |U(t) - V(t)| dt<br>
+                  Measures the minimum work (in degrees of angular transport) required to morph the Earth slope CDF into the planetary target CDF.
+                </p>
+              </div>
+              <div class="math-card">
+                <h4>Zero-Veto Biophysical Gating Rules</h4>
+                <p class="mono text-muted">
+                  If NDVI > 0.25 ⟹ Score = 0.0 (Root shear failure)<br>
+                  If Precip > 350 mm/yr ⟹ Score = 0.0 (Fluvial weathering)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- STATUS TELEMETRY BAR -->
+    <footer class="app-status-bar">
+      <span id="status-bar" class="mono">Initializing EARTHY Scientific Workstation…</span>
+    </footer>
+
+  </div>
+
+  <!-- VENDOR SCRIPTS -->
+  <script src="js/vendor/three.min.js"></script>
+  <script src="js/vendor/OrbitControls.js"></script>
+
+  <!-- APPLICATION SCRIPTS -->
+  <script src="js/api.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/map2d.js"></script>
+  <script src="js/globe3d.js"></script>
+  <script src="js/terrain3d.js"></script>
+  <script src="js/comparison3d.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- WORKSTATION LIFECYCLE INITIALIZER -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (window.EarthyWorkstation) {
+        window.app = new window.EarthyWorkstation();
+        window.app.init();
+      }
+    });
+  </script>
+</body>
+</html>

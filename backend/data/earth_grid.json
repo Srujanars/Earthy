@@ -1,0 +1,386 @@
+[
+  {
+    "cell_id": "ATK-01", "name": "Atacama Desert – Yungay Basin", "country": "Chile", "region": "South America",
+    "latitude": -24.1, "longitude": -69.8, "elevation_m": 2400, "slope_deg": 2.1, "roughness_m": 0.18,
+    "precipitation_mm_yr": 2, "vegetation_ndvi": 0.02, "annual_temp_range_k": 28, "lst_diurnal_range_k": 42,
+    "mean_annual_temp_c": 14.5, "solar_insolation_kwh_m2_day": 8.1, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 5, "geological_context": "hyperarid-lacustrine",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "ANT-01", "name": "Antarctic Polar Plateau – Dome C", "country": "Antarctica", "region": "Antarctica",
+    "latitude": -75.1, "longitude": 123.4, "elevation_m": 3233, "slope_deg": 0.5, "roughness_m": 0.08,
+    "precipitation_mm_yr": 25, "vegetation_ndvi": 0.00, "annual_temp_range_k": 48, "lst_diurnal_range_k": 20,
+    "mean_annual_temp_c": -54.5, "solar_insolation_kwh_m2_day": 3.2, "permafrost_depth_m": 2000.0,
+    "water_proxy_score": 85, "geological_context": "polar-ice-sheet",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS LST"]
+  },
+  {
+    "cell_id": "SVB-01", "name": "Svalbard – Spitsbergen Central", "country": "Norway", "region": "Arctic Europe",
+    "latitude": 78.2, "longitude": 15.6, "elevation_m": 920, "slope_deg": 8.3, "roughness_m": 0.45,
+    "precipitation_mm_yr": 190, "vegetation_ndvi": 0.08, "annual_temp_range_k": 38, "lst_diurnal_range_k": 25,
+    "mean_annual_temp_c": -6.5, "solar_insolation_kwh_m2_day": 3.0, "permafrost_depth_m": 400.0,
+    "water_proxy_score": 60, "geological_context": "polar-periglacial",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "DVN-01", "name": "Devon Island – Haughton Crater", "country": "Canada", "region": "Arctic North America",
+    "latitude": 75.4, "longitude": -89.9, "elevation_m": 150, "slope_deg": 5.2, "roughness_m": 0.60,
+    "precipitation_mm_yr": 140, "vegetation_ndvi": 0.04, "annual_temp_range_k": 50, "lst_diurnal_range_k": 28,
+    "mean_annual_temp_c": -16.5, "solar_insolation_kwh_m2_day": 2.8, "permafrost_depth_m": 500.0,
+    "water_proxy_score": 55, "geological_context": "polar-impact-crater",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "MJV-01", "name": "Mojave Desert – Kelso Dunes", "country": "USA", "region": "North America",
+    "latitude": 34.9, "longitude": -115.7, "elevation_m": 790, "slope_deg": 4.5, "roughness_m": 0.22,
+    "precipitation_mm_yr": 95, "vegetation_ndvi": 0.07, "annual_temp_range_k": 38, "lst_diurnal_range_k": 36,
+    "mean_annual_temp_c": 18.0, "solar_insolation_kwh_m2_day": 7.2, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 8, "geological_context": "arid-aeolian",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "MKA-01", "name": "Mauna Kea Summit", "country": "USA", "region": "Pacific Hawaii",
+    "latitude": 19.82, "longitude": -155.47, "elevation_m": 4205, "slope_deg": 11.5, "roughness_m": 0.55,
+    "precipitation_mm_yr": 42, "vegetation_ndvi": 0.01, "annual_temp_range_k": 20, "lst_diurnal_range_k": 22,
+    "mean_annual_temp_c": 2.5, "solar_insolation_kwh_m2_day": 6.8, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 10, "geological_context": "shield-volcano-summit",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "ICE-01", "name": "Iceland – Askja Caldera Lava Fields", "country": "Iceland", "region": "North Atlantic",
+    "latitude": 65.05, "longitude": -16.75, "elevation_m": 1100, "slope_deg": 7.8, "roughness_m": 0.90,
+    "precipitation_mm_yr": 310, "vegetation_ndvi": 0.06, "annual_temp_range_k": 24, "lst_diurnal_range_k": 18,
+    "mean_annual_temp_c": -1.5, "solar_insolation_kwh_m2_day": 2.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 25, "geological_context": "basaltic-volcanic",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "SAH-01", "name": "Sahara – Tanezrouft Basin", "country": "Algeria", "region": "North Africa",
+    "latitude": 23.5, "longitude": 0.8, "elevation_m": 350, "slope_deg": 1.2, "roughness_m": 0.12,
+    "precipitation_mm_yr": 5, "vegetation_ndvi": 0.01, "annual_temp_range_k": 40, "lst_diurnal_range_k": 50,
+    "mean_annual_temp_c": 28.0, "solar_insolation_kwh_m2_day": 8.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 3, "geological_context": "hyperarid-aeolian",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "NAM-01", "name": "Namib Desert – Sossusvlei", "country": "Namibia", "region": "Southern Africa",
+    "latitude": -24.7, "longitude": 15.3, "elevation_m": 820, "slope_deg": 3.2, "roughness_m": 0.25,
+    "precipitation_mm_yr": 18, "vegetation_ndvi": 0.03, "annual_temp_range_k": 25, "lst_diurnal_range_k": 38,
+    "mean_annual_temp_c": 22.0, "solar_insolation_kwh_m2_day": 7.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 4, "geological_context": "hyperarid-aeolian",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "QDB-01", "name": "Qaidam Basin – Lop Nor", "country": "China", "region": "Central Asia",
+    "latitude": 38.5, "longitude": 92.5, "elevation_m": 2680, "slope_deg": 1.5, "roughness_m": 0.20,
+    "precipitation_mm_yr": 20, "vegetation_ndvi": 0.03, "annual_temp_range_k": 50, "lst_diurnal_range_k": 44,
+    "mean_annual_temp_c": 2.5, "solar_insolation_kwh_m2_day": 6.5, "permafrost_depth_m": 50.0,
+    "water_proxy_score": 20, "geological_context": "hypersaline-lacustrine",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "MCM-01", "name": "McMurdo Dry Valleys", "country": "Antarctica", "region": "Antarctica",
+    "latitude": -77.5, "longitude": 161.5, "elevation_m": 300, "slope_deg": 6.5, "roughness_m": 0.50,
+    "precipitation_mm_yr": 10, "vegetation_ndvi": 0.00, "annual_temp_range_k": 35, "lst_diurnal_range_k": 22,
+    "mean_annual_temp_c": -20.0, "solar_insolation_kwh_m2_day": 2.9, "permafrost_depth_m": 300.0,
+    "water_proxy_score": 40, "geological_context": "polar-periglacial",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "ETN-01", "name": "Etna – Valle del Bove", "country": "Italy", "region": "Mediterranean",
+    "latitude": 37.7, "longitude": 15.0, "elevation_m": 2900, "slope_deg": 15.0, "roughness_m": 1.10,
+    "precipitation_mm_yr": 280, "vegetation_ndvi": 0.05, "annual_temp_range_k": 20, "lst_diurnal_range_k": 20,
+    "mean_annual_temp_c": 3.0, "solar_insolation_kwh_m2_day": 5.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 15, "geological_context": "stratovolcano-lava",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "RAK-01", "name": "Rub al Khali – Empty Quarter", "country": "Saudi Arabia", "region": "Middle East",
+    "latitude": 21.5, "longitude": 50.5, "elevation_m": 250, "slope_deg": 2.0, "roughness_m": 0.15,
+    "precipitation_mm_yr": 12, "vegetation_ndvi": 0.02, "annual_temp_range_k": 35, "lst_diurnal_range_k": 48,
+    "mean_annual_temp_c": 32.0, "solar_insolation_kwh_m2_day": 8.2, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 3, "geological_context": "hyperarid-aeolian",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "TBT-01", "name": "Tibetan Plateau – Chang Tang", "country": "China", "region": "Central Asia",
+    "latitude": 33.5, "longitude": 84.0, "elevation_m": 4800, "slope_deg": 2.5, "roughness_m": 0.30,
+    "precipitation_mm_yr": 80, "vegetation_ndvi": 0.08, "annual_temp_range_k": 45, "lst_diurnal_range_k": 36,
+    "mean_annual_temp_c": -5.0, "solar_insolation_kwh_m2_day": 7.0, "permafrost_depth_m": 100.0,
+    "water_proxy_score": 35, "geological_context": "high-altitude-steppe",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "GRL-01", "name": "Greenland Ice Sheet – Summit Station", "country": "Greenland", "region": "Arctic",
+    "latitude": 72.6, "longitude": -38.5, "elevation_m": 3216, "slope_deg": 0.8, "roughness_m": 0.10,
+    "precipitation_mm_yr": 300, "vegetation_ndvi": 0.00, "annual_temp_range_k": 40, "lst_diurnal_range_k": 18,
+    "mean_annual_temp_c": -31.0, "solar_insolation_kwh_m2_day": 2.5, "permafrost_depth_m": 3000.0,
+    "water_proxy_score": 90, "geological_context": "polar-ice-sheet",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS LST"]
+  },
+  {
+    "cell_id": "ANT-02", "name": "Antarctic Peninsula – Weddell Coast", "country": "Antarctica", "region": "Antarctica",
+    "latitude": -70.0, "longitude": -60.0, "elevation_m": 50, "slope_deg": 3.0, "roughness_m": 0.40,
+    "precipitation_mm_yr": 350, "vegetation_ndvi": 0.02, "annual_temp_range_k": 25, "lst_diurnal_range_k": 15,
+    "mean_annual_temp_c": -15.0, "solar_insolation_kwh_m2_day": 2.8, "permafrost_depth_m": 200.0,
+    "water_proxy_score": 65, "geological_context": "polar-coastal",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS LST"]
+  },
+  {
+    "cell_id": "IRN-01", "name": "Dasht-e Kavir – Central Iran", "country": "Iran", "region": "Middle East",
+    "latitude": 34.0, "longitude": 54.0, "elevation_m": 700, "slope_deg": 1.0, "roughness_m": 0.10,
+    "precipitation_mm_yr": 55, "vegetation_ndvi": 0.04, "annual_temp_range_k": 48, "lst_diurnal_range_k": 46,
+    "mean_annual_temp_c": 22.0, "solar_insolation_kwh_m2_day": 7.8, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 8, "geological_context": "arid-salt-playa",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "MNG-01", "name": "Gobi Desert – Mongolian Basin", "country": "Mongolia", "region": "Central Asia",
+    "latitude": 43.5, "longitude": 104.5, "elevation_m": 1200, "slope_deg": 2.0, "roughness_m": 0.18,
+    "precipitation_mm_yr": 80, "vegetation_ndvi": 0.07, "annual_temp_range_k": 60, "lst_diurnal_range_k": 38,
+    "mean_annual_temp_c": -2.0, "solar_insolation_kwh_m2_day": 6.0, "permafrost_depth_m": 15.0,
+    "water_proxy_score": 12, "geological_context": "arid-steppe",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "AND-01", "name": "Andes – Puna Plateau Salar", "country": "Argentina", "region": "South America",
+    "latitude": -24.5, "longitude": -67.0, "elevation_m": 3800, "slope_deg": 3.5, "roughness_m": 0.28,
+    "precipitation_mm_yr": 60, "vegetation_ndvi": 0.06, "annual_temp_range_k": 32, "lst_diurnal_range_k": 40,
+    "mean_annual_temp_c": 2.0, "solar_insolation_kwh_m2_day": 7.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 20, "geological_context": "hypersaline-high-altitude",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "KZK-01", "name": "Kazakhstan – Ustyurt Plateau", "country": "Kazakhstan", "region": "Central Asia",
+    "latitude": 43.0, "longitude": 56.0, "elevation_m": 180, "slope_deg": 1.5, "roughness_m": 0.15,
+    "precipitation_mm_yr": 110, "vegetation_ndvi": 0.09, "annual_temp_range_k": 55, "lst_diurnal_range_k": 42,
+    "mean_annual_temp_c": 8.0, "solar_insolation_kwh_m2_day": 5.8, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 10, "geological_context": "semi-arid-plateau",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "AUS-01", "name": "Nullarbor Plain – Western Australia", "country": "Australia", "region": "Oceania",
+    "latitude": -31.0, "longitude": 128.0, "elevation_m": 180, "slope_deg": 0.5, "roughness_m": 0.10,
+    "precipitation_mm_yr": 185, "vegetation_ndvi": 0.10, "annual_temp_range_k": 28, "lst_diurnal_range_k": 32,
+    "mean_annual_temp_c": 18.5, "solar_insolation_kwh_m2_day": 7.0, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 8, "geological_context": "arid-karst-plain",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "SOM-01", "name": "Ogaden Desert – Horn of Africa", "country": "Somalia", "region": "East Africa",
+    "latitude": 7.5, "longitude": 44.5, "elevation_m": 550, "slope_deg": 1.8, "roughness_m": 0.14,
+    "precipitation_mm_yr": 70, "vegetation_ndvi": 0.08, "annual_temp_range_k": 20, "lst_diurnal_range_k": 36,
+    "mean_annual_temp_c": 29.0, "solar_insolation_kwh_m2_day": 8.0, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 5, "geological_context": "arid-semi-arid",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "PRU-01", "name": "Peruvian Altiplano – Pisco Seco", "country": "Peru", "region": "South America",
+    "latitude": -15.5, "longitude": -70.5, "elevation_m": 3800, "slope_deg": 4.0, "roughness_m": 0.32,
+    "precipitation_mm_yr": 150, "vegetation_ndvi": 0.12, "annual_temp_range_k": 24, "lst_diurnal_range_k": 28,
+    "mean_annual_temp_c": 1.0, "solar_insolation_kwh_m2_day": 6.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 22, "geological_context": "high-altitude-volcanic",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "TUR-01", "name": "Cappadocia Volcanic Plateau", "country": "Turkey", "region": "Western Asia",
+    "latitude": 38.5, "longitude": 35.0, "elevation_m": 1200, "slope_deg": 9.0, "roughness_m": 0.70,
+    "precipitation_mm_yr": 350, "vegetation_ndvi": 0.14, "annual_temp_range_k": 36, "lst_diurnal_range_k": 28,
+    "mean_annual_temp_c": 9.0, "solar_insolation_kwh_m2_day": 5.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 18, "geological_context": "pyroclastic-volcanic",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "CHL-01", "name": "Atacama – Llullaillaco Volcano Flank", "country": "Chile", "region": "South America",
+    "latitude": -24.7, "longitude": -68.5, "elevation_m": 5200, "slope_deg": 14.0, "roughness_m": 0.65,
+    "precipitation_mm_yr": 8, "vegetation_ndvi": 0.01, "annual_temp_range_k": 35, "lst_diurnal_range_k": 38,
+    "mean_annual_temp_c": -8.0, "solar_insolation_kwh_m2_day": 7.5, "permafrost_depth_m": 5.0,
+    "water_proxy_score": 12, "geological_context": "stratovolcano-summit",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "RUS-01", "name": "Siberian Yakutia – Lena River Permafrost", "country": "Russia", "region": "Northern Asia",
+    "latitude": 65.0, "longitude": 128.0, "elevation_m": 180, "slope_deg": 2.5, "roughness_m": 0.30,
+    "precipitation_mm_yr": 200, "vegetation_ndvi": 0.18, "annual_temp_range_k": 65, "lst_diurnal_range_k": 25,
+    "mean_annual_temp_c": -11.0, "solar_insolation_kwh_m2_day": 3.0, "permafrost_depth_m": 600.0,
+    "water_proxy_score": 55, "geological_context": "taiga-permafrost",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "CAN-01", "name": "Canadian Arctic Archipelago – Ellesmere Island", "country": "Canada", "region": "Arctic North America",
+    "latitude": 80.0, "longitude": -85.0, "elevation_m": 600, "slope_deg": 7.5, "roughness_m": 0.55,
+    "precipitation_mm_yr": 115, "vegetation_ndvi": 0.03, "annual_temp_range_k": 48, "lst_diurnal_range_k": 20,
+    "mean_annual_temp_c": -20.5, "solar_insolation_kwh_m2_day": 2.3, "permafrost_depth_m": 700.0,
+    "water_proxy_score": 60, "geological_context": "polar-tundra",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "SAH-02", "name": "Libyan Desert – Fezzan", "country": "Libya", "region": "North Africa",
+    "latitude": 25.0, "longitude": 14.0, "elevation_m": 480, "slope_deg": 1.5, "roughness_m": 0.12,
+    "precipitation_mm_yr": 4, "vegetation_ndvi": 0.01, "annual_temp_range_k": 38, "lst_diurnal_range_k": 50,
+    "mean_annual_temp_c": 25.0, "solar_insolation_kwh_m2_day": 8.4, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 3, "geological_context": "hyperarid-rocky",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "MRC-01", "name": "Morocco – Draa Valley Rocky Plateau", "country": "Morocco", "region": "North Africa",
+    "latitude": 29.5, "longitude": -6.5, "elevation_m": 1100, "slope_deg": 5.5, "roughness_m": 0.40,
+    "precipitation_mm_yr": 55, "vegetation_ndvi": 0.06, "annual_temp_range_k": 32, "lst_diurnal_range_k": 38,
+    "mean_annual_temp_c": 18.0, "solar_insolation_kwh_m2_day": 7.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 8, "geological_context": "arid-rocky-plateau",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "AZB-01", "name": "Azerbaijan – Absheron Mud Volcanoes", "country": "Azerbaijan", "region": "Western Asia",
+    "latitude": 40.3, "longitude": 49.6, "elevation_m": 25, "slope_deg": 8.0, "roughness_m": 0.60,
+    "precipitation_mm_yr": 200, "vegetation_ndvi": 0.07, "annual_temp_range_k": 28, "lst_diurnal_range_k": 25,
+    "mean_annual_temp_c": 14.5, "solar_insolation_kwh_m2_day": 5.0, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 12, "geological_context": "mud-volcano",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "KEN-01", "name": "Kenya – Chalbi Desert", "country": "Kenya", "region": "East Africa",
+    "latitude": 2.5, "longitude": 37.5, "elevation_m": 390, "slope_deg": 1.0, "roughness_m": 0.10,
+    "precipitation_mm_yr": 95, "vegetation_ndvi": 0.07, "annual_temp_range_k": 10, "lst_diurnal_range_k": 28,
+    "mean_annual_temp_c": 28.0, "solar_insolation_kwh_m2_day": 7.8, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 5, "geological_context": "arid-rift-valley",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "NOR-01", "name": "Norway – Hardangervidda Plateau", "country": "Norway", "region": "Northern Europe",
+    "latitude": 60.3, "longitude": 7.5, "elevation_m": 1200, "slope_deg": 3.5, "roughness_m": 0.35,
+    "precipitation_mm_yr": 480, "vegetation_ndvi": 0.20, "annual_temp_range_k": 25, "lst_diurnal_range_k": 18,
+    "mean_annual_temp_c": -2.0, "solar_insolation_kwh_m2_day": 2.8, "permafrost_depth_m": 20.0,
+    "water_proxy_score": 40, "geological_context": "sub-arctic-plateau",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "GRC-01", "name": "Greece – Aegean Volcanic Arc (Santorini Caldera)", "country": "Greece", "region": "Mediterranean",
+    "latitude": 36.4, "longitude": 25.4, "elevation_m": 350, "slope_deg": 20.0, "roughness_m": 1.20,
+    "precipitation_mm_yr": 350, "vegetation_ndvi": 0.12, "annual_temp_range_k": 20, "lst_diurnal_range_k": 20,
+    "mean_annual_temp_c": 17.5, "solar_insolation_kwh_m2_day": 5.8, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 10, "geological_context": "caldera-volcanic",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "MEX-01", "name": "Chihuahuan Desert – White Sands", "country": "USA/Mexico", "region": "North America",
+    "latitude": 32.5, "longitude": -106.5, "elevation_m": 1200, "slope_deg": 1.5, "roughness_m": 0.12,
+    "precipitation_mm_yr": 220, "vegetation_ndvi": 0.09, "annual_temp_range_k": 36, "lst_diurnal_range_k": 36,
+    "mean_annual_temp_c": 16.0, "solar_insolation_kwh_m2_day": 7.0, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 8, "geological_context": "gypsum-dune-arid",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "AFG-01", "name": "Afghanistan – Registan Desert", "country": "Afghanistan", "region": "South Asia",
+    "latitude": 29.5, "longitude": 64.5, "elevation_m": 480, "slope_deg": 2.5, "roughness_m": 0.20,
+    "precipitation_mm_yr": 42, "vegetation_ndvi": 0.04, "annual_temp_range_k": 44, "lst_diurnal_range_k": 46,
+    "mean_annual_temp_c": 22.0, "solar_insolation_kwh_m2_day": 7.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 5, "geological_context": "arid-aeolian",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "BOL-01", "name": "Bolivia – Salar de Uyuni", "country": "Bolivia", "region": "South America",
+    "latitude": -20.1, "longitude": -67.6, "elevation_m": 3650, "slope_deg": 0.3, "roughness_m": 0.05,
+    "precipitation_mm_yr": 150, "vegetation_ndvi": 0.03, "annual_temp_range_k": 24, "lst_diurnal_range_k": 36,
+    "mean_annual_temp_c": 2.0, "solar_insolation_kwh_m2_day": 7.2, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 25, "geological_context": "hypersaline-flat",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "CNG-01", "name": "Congo Basin – Equatorial Weathering Crust", "country": "DRC", "region": "Central Africa",
+    "latitude": -3.5, "longitude": 24.0, "elevation_m": 350, "slope_deg": 2.0, "roughness_m": 0.20,
+    "precipitation_mm_yr": 1800, "vegetation_ndvi": 0.60, "annual_temp_range_k": 6, "lst_diurnal_range_k": 10,
+    "mean_annual_temp_c": 25.0, "solar_insolation_kwh_m2_day": 5.0, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 95, "geological_context": "tropical-rainforest",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "FIN-01", "name": "Finnish Lapland – Fell Plateau", "country": "Finland", "region": "Northern Europe",
+    "latitude": 68.5, "longitude": 27.0, "elevation_m": 550, "slope_deg": 4.0, "roughness_m": 0.30,
+    "precipitation_mm_yr": 450, "vegetation_ndvi": 0.22, "annual_temp_range_k": 42, "lst_diurnal_range_k": 20,
+    "mean_annual_temp_c": -4.5, "solar_insolation_kwh_m2_day": 2.5, "permafrost_depth_m": 30.0,
+    "water_proxy_score": 48, "geological_context": "sub-arctic-tundra",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "PHL-01", "name": "Philippines – Pinatubo Pyroclastic Plain", "country": "Philippines", "region": "Southeast Asia",
+    "latitude": 15.1, "longitude": 120.3, "elevation_m": 600, "slope_deg": 10.0, "roughness_m": 0.80,
+    "precipitation_mm_yr": 2800, "vegetation_ndvi": 0.30, "annual_temp_range_k": 10, "lst_diurnal_range_k": 14,
+    "mean_annual_temp_c": 25.0, "solar_insolation_kwh_m2_day": 5.0, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 80, "geological_context": "pyroclastic-plain",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "AUS-02", "name": "Australian Outback – Lake Eyre Basin", "country": "Australia", "region": "Oceania",
+    "latitude": -29.0, "longitude": 137.0, "elevation_m": -15, "slope_deg": 0.5, "roughness_m": 0.08,
+    "precipitation_mm_yr": 125, "vegetation_ndvi": 0.08, "annual_temp_range_k": 30, "lst_diurnal_range_k": 36,
+    "mean_annual_temp_c": 22.0, "solar_insolation_kwh_m2_day": 7.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 12, "geological_context": "arid-salt-lake",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "GNL-01", "name": "Greenland – Kangerlussuaq Sandur", "country": "Greenland", "region": "Arctic",
+    "latitude": 67.0, "longitude": -51.0, "elevation_m": 50, "slope_deg": 2.0, "roughness_m": 0.25,
+    "precipitation_mm_yr": 155, "vegetation_ndvi": 0.10, "annual_temp_range_k": 38, "lst_diurnal_range_k": 22,
+    "mean_annual_temp_c": -6.0, "solar_insolation_kwh_m2_day": 2.8, "permafrost_depth_m": 100.0,
+    "water_proxy_score": 45, "geological_context": "glaciofluvial-sandur",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "NEW-01", "name": "New Zealand – Tongariro Volcanic Plateau", "country": "New Zealand", "region": "Oceania",
+    "latitude": -39.1, "longitude": 175.6, "elevation_m": 1800, "slope_deg": 12.0, "roughness_m": 0.70,
+    "precipitation_mm_yr": 1800, "vegetation_ndvi": 0.25, "annual_temp_range_k": 20, "lst_diurnal_range_k": 18,
+    "mean_annual_temp_c": 5.0, "solar_insolation_kwh_m2_day": 4.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 60, "geological_context": "andesitic-volcanic",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "JPN-01", "name": "Japan – Aokigahara Lava Forest Margin", "country": "Japan", "region": "East Asia",
+    "latitude": 35.5, "longitude": 138.6, "elevation_m": 900, "slope_deg": 6.0, "roughness_m": 0.90,
+    "precipitation_mm_yr": 1600, "vegetation_ndvi": 0.40, "annual_temp_range_k": 28, "lst_diurnal_range_k": 16,
+    "mean_annual_temp_c": 9.0, "solar_insolation_kwh_m2_day": 4.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 70, "geological_context": "basaltic-lava-forested",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "GBR-01", "name": "Scottish Highlands – Cairngorm Plateau", "country": "United Kingdom", "region": "Northern Europe",
+    "latitude": 57.1, "longitude": -3.7, "elevation_m": 1100, "slope_deg": 5.0, "roughness_m": 0.35,
+    "precipitation_mm_yr": 1200, "vegetation_ndvi": 0.28, "annual_temp_range_k": 20, "lst_diurnal_range_k": 14,
+    "mean_annual_temp_c": 1.5, "solar_insolation_kwh_m2_day": 2.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 55, "geological_context": "sub-arctic-granite-plateau",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "POL-01", "name": "Poland – Sudetes Karst Plateau", "country": "Poland", "region": "Central Europe",
+    "latitude": 50.5, "longitude": 16.0, "elevation_m": 700, "slope_deg": 8.0, "roughness_m": 0.45,
+    "precipitation_mm_yr": 750, "vegetation_ndvi": 0.30, "annual_temp_range_k": 28, "lst_diurnal_range_k": 16,
+    "mean_annual_temp_c": 6.5, "solar_insolation_kwh_m2_day": 3.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 40, "geological_context": "karst-limestone",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "MEX-02", "name": "Mexico – Sierra Madre Occidental Volcanic", "country": "Mexico", "region": "North America",
+    "latitude": 24.0, "longitude": -105.0, "elevation_m": 2400, "slope_deg": 13.0, "roughness_m": 0.80,
+    "precipitation_mm_yr": 450, "vegetation_ndvi": 0.18, "annual_temp_range_k": 24, "lst_diurnal_range_k": 25,
+    "mean_annual_temp_c": 10.0, "solar_insolation_kwh_m2_day": 6.0, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 20, "geological_context": "rhyolitic-volcanic",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "TZN-01", "name": "Tanzania – Kilimanjaro Alpine Desert Zone", "country": "Tanzania", "region": "East Africa",
+    "latitude": -3.0, "longitude": 37.3, "elevation_m": 4800, "slope_deg": 18.0, "roughness_m": 0.90,
+    "precipitation_mm_yr": 200, "vegetation_ndvi": 0.05, "annual_temp_range_k": 20, "lst_diurnal_range_k": 25,
+    "mean_annual_temp_c": -4.0, "solar_insolation_kwh_m2_day": 5.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 15, "geological_context": "stratovolcano-alpine",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  },
+  {
+    "cell_id": "COL-01", "name": "Colombia – Tatacoa Desert", "country": "Colombia", "region": "South America",
+    "latitude": 3.2, "longitude": -75.2, "elevation_m": 350, "slope_deg": 6.0, "roughness_m": 0.50,
+    "precipitation_mm_yr": 300, "vegetation_ndvi": 0.12, "annual_temp_range_k": 10, "lst_diurnal_range_k": 22,
+    "mean_annual_temp_c": 28.0, "solar_insolation_kwh_m2_day": 5.5, "permafrost_depth_m": 0.0,
+    "water_proxy_score": 10, "geological_context": "semi-arid-badlands",
+    "data_provenance": ["Copernicus GLO-30", "NASA POWER MERRA-2", "MODIS NDVI", "MODIS LST"]
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "id": "jezero_crater",
+    "name": "Jezero Crater",
+    "body": "mars",
+    "description": "Ancient lake delta in Mars's Isidis Basin; primary site of the Perseverance rover. Rich in carbonate and olivine deposits.",
+    "latitude": 18.4,
+    "longitude": 77.7,
+    "elevation_m": -2600,
+    "criteria": {
+      "precipitation_mm_yr": {"target": 0, "weight": 0.15, "tolerance": 10},
+      "vegetation_ndvi": {"target": 0.0, "weight": 0.20, "tolerance": 0.05},
+      "slope_deg": {"target": 5.0, "weight": 0.15, "tolerance": 3.0},
+      "roughness_m": {"target": 0.4, "weight": 0.10, "tolerance": 0.2},
+      "mean_annual_temp_c": {"target": -55, "weight": 0.10, "tolerance": 20},
+      "annual_temp_range_k": {"target": 100, "weight": 0.10, "tolerance": 30},
+      "lst_diurnal_range_k": {"target": 80, "weight": 0.10, "tolerance": 20},
+      "solar_insolation_kwh_m2_day": {"target": 5.5, "weight": 0.05, "tolerance": 1.5},
+      "geological_context": "lacustrine-delta"
+    },
+    "weights": {
+      "precipitation": 0.15,
+      "ndvi": 0.20,
+      "slope": 0.15,
+      "roughness": 0.10,
+      "temperature": 0.10,
+      "temp_range": 0.10,
+      "diurnal_lst": 0.10,
+      "solar": 0.05,
+      "permafrost": 0.05
+    },
+    "mission_context": "Mars 2020 Perseverance landing site; astrobiology and sample return",
+    "key_science_questions": [
+      "Evidence of past habitability",
+      "Organic molecule preservation",
+      "Carbonate mineral formation"
+    ]
+  },
+  {
+    "id": "gale_crater",
+    "name": "Gale Crater",
+    "body": "mars",
+    "description": "5-km-tall Mt. Sharp layered sedimentary mound; Curiosity rover site. Records 3 Ga of Martian climate history.",
+    "latitude": -5.4,
+    "longitude": 137.8,
+    "elevation_m": -4500,
+    "criteria": {
+      "precipitation_mm_yr": {"target": 0, "weight": 0.12, "tolerance": 8},
+      "vegetation_ndvi": {"target": 0.0, "weight": 0.18, "tolerance": 0.04},
+      "slope_deg": {"target": 8.0, "weight": 0.15, "tolerance": 4.0},
+      "roughness_m": {"target": 0.5, "weight": 0.10, "tolerance": 0.25},
+      "mean_annual_temp_c": {"target": -50, "weight": 0.10, "tolerance": 20},
+      "annual_temp_range_k": {"target": 90, "weight": 0.10, "tolerance": 25},
+      "lst_diurnal_range_k": {"target": 70, "weight": 0.10, "tolerance": 20},
+      "solar_insolation_kwh_m2_day": {"target": 5.0, "weight": 0.08, "tolerance": 1.5},
+      "geological_context": "layered-sedimentary"
+    },
+    "weights": {
+      "precipitation": 0.12,
+      "ndvi": 0.18,
+      "slope": 0.15,
+      "roughness": 0.10,
+      "temperature": 0.10,
+      "temp_range": 0.10,
+      "diurnal_lst": 0.10,
+      "solar": 0.08,
+      "permafrost": 0.07
+    },
+    "mission_context": "MSL Curiosity landing site; geochemistry and habitability assessment",
+    "key_science_questions": [
+      "Ancient fluvial and lacustrine processes",
+      "Sulfate-clay mineral transitions",
+      "Methane detection"
+    ]
+  },
+  {
+    "id": "valles_marineris",
+    "name": "Valles Marineris",
+    "body": "mars",
+    "description": "4,000-km canyon system up to 7 km deep; exposes deep crustal stratigraphy. Candidate for water ice deposits.",
+    "latitude": -13.9,
+    "longitude": -59.2,
+    "elevation_m": -7000,
+    "criteria": {
+      "precipitation_mm_yr": {"target": 0, "weight": 0.10, "tolerance": 5},
+      "vegetation_ndvi": {"target": 0.0, "weight": 0.15, "tolerance": 0.03},
+      "slope_deg": {"target": 25.0, "weight": 0.20, "tolerance": 8.0},
+      "roughness_m": {"target": 1.5, "weight": 0.15, "tolerance": 0.5},
+      "mean_annual_temp_c": {"target": -60, "weight": 0.10, "tolerance": 20},
+      "annual_temp_range_k": {"target": 110, "weight": 0.10, "tolerance": 30},
+      "lst_diurnal_range_k": {"target": 90, "weight": 0.10, "tolerance": 20},
+      "solar_insolation_kwh_m2_day": {"target": 5.0, "weight": 0.05, "tolerance": 1.0},
+      "geological_context": "canyon-tectonic"
+    },
+    "weights": {
+      "precipitation": 0.10,
+      "ndvi": 0.15,
+      "slope": 0.20,
+      "roughness": 0.15,
+      "temperature": 0.10,
+      "temp_range": 0.10,
+      "diurnal_lst": 0.10,
+      "solar": 0.05,
+      "permafrost": 0.05
+    },
+    "mission_context": "Future exploration of deep crustal layers; potential water ice access",
+    "key_science_questions": [
+      "Crustal stratigraphy and composition",
+      "Mass-wasting and slope stability",
+      "Subsurface water ice"
+    ]
+  },
+  {
+    "id": "olympus_mons",
+    "name": "Olympus Mons",
+    "body": "mars",
+    "description": "Solar system's tallest volcano at 22 km; caldera 80 km wide. Pristine lava flows with low dust coverage.",
+    "latitude": 18.65,
+    "longitude": -133.8,
+    "elevation_m": 22000,
+    "criteria": {
+      "precipitation_mm_yr": {"target": 0, "weight": 0.10, "tolerance": 5},
+      "vegetation_ndvi": {"target": 0.0, "weight": 0.15, "tolerance": 0.03},
+      "slope_deg": {"target": 3.0, "weight": 0.20, "tolerance": 2.0},
+      "roughness_m": {"target": 0.3, "weight": 0.15, "tolerance": 0.15},
+      "mean_annual_temp_c": {"target": -65, "weight": 0.10, "tolerance": 20},
+      "annual_temp_range_k": {"target": 80, "weight": 0.10, "tolerance": 20},
+      "lst_diurnal_range_k": {"target": 60, "weight": 0.10, "tolerance": 20},
+      "solar_insolation_kwh_m2_day": {"target": 4.5, "weight": 0.05, "tolerance": 1.0},
+      "geological_context": "shield-volcano"
+    },
+    "weights": {
+      "precipitation": 0.10,
+      "ndvi": 0.15,
+      "slope": 0.20,
+      "roughness": 0.15,
+      "temperature": 0.10,
+      "temp_range": 0.10,
+      "diurnal_lst": 0.10,
+      "solar": 0.05,
+      "permafrost": 0.05
+    },
+    "mission_context": "Volcanic geology and atmosphere-surface interaction studies",
+    "key_science_questions": [
+      "Recent volcanic activity timeline",
+      "Lava tube habitability",
+      "Summit caldera geology"
+    ]
+  },
+  {
+    "id": "lunar_south_pole",
+    "name": "Lunar South Pole",
+    "body": "moon",
+    "description": "Region near 90°S with permanently shadowed craters hosting water ice. Artemis programme target.",
+    "latitude": -89.5,
+    "longitude": 0.0,
+    "elevation_m": -6000,
+    "criteria": {
+      "precipitation_mm_yr": {"target": 0, "weight": 0.05, "tolerance": 2},
+      "vegetation_ndvi": {"target": 0.0, "weight": 0.20, "tolerance": 0.02},
+      "slope_deg": {"target": 6.0, "weight": 0.20, "tolerance": 4.0},
+      "roughness_m": {"target": 0.6, "weight": 0.15, "tolerance": 0.3},
+      "mean_annual_temp_c": {"target": -180, "weight": 0.15, "tolerance": 30},
+      "annual_temp_range_k": {"target": 20, "weight": 0.10, "tolerance": 10},
+      "lst_diurnal_range_k": {"target": 10, "weight": 0.05, "tolerance": 5},
+      "solar_insolation_kwh_m2_day": {"target": 0.5, "weight": 0.05, "tolerance": 0.5},
+      "geological_context": "psr-polar"
+    },
+    "weights": {
+      "precipitation": 0.05,
+      "ndvi": 0.20,
+      "slope": 0.20,
+      "roughness": 0.15,
+      "temperature": 0.15,
+      "temp_range": 0.10,
+      "diurnal_lst": 0.05,
+      "solar": 0.05,
+      "permafrost": 0.05
+    },
+    "mission_context": "Artemis III landing zone; water ice extraction and ISRU",
+    "key_science_questions": [
+      "Water ice abundance and purity",
+      "PSR volatile inventory",
+      "Polar regolith mechanics"
+    ]
+  },
+  {
+    "id": "malapert_massif",
+    "name": "Malapert Massif",
+    "body": "moon",
+    "description": "Near-polar mountain with near-continuous solar illumination. Proposed relay communications hub.",
+    "latitude": -86.0,
+    "longitude": 357.0,
+    "elevation_m": 5000,
+    "criteria": {
+      "precipitation_mm_yr": {"target": 0, "weight": 0.05, "tolerance": 2},
+      "vegetation_ndvi": {"target": 0.0, "weight": 0.20, "tolerance": 0.02},
+      "slope_deg": {"target": 15.0, "weight": 0.20, "tolerance": 6.0},
+      "roughness_m": {"target": 1.0, "weight": 0.15, "tolerance": 0.4},
+      "mean_annual_temp_c": {"target": -50, "weight": 0.10, "tolerance": 20},
+      "annual_temp_range_k": {"target": 30, "weight": 0.10, "tolerance": 15},
+      "lst_diurnal_range_k": {"target": 150, "weight": 0.10, "tolerance": 30},
+      "solar_insolation_kwh_m2_day": {"target": 10.0, "weight": 0.05, "tolerance": 2.0},
+      "geological_context": "highland-massif"
+    },
+    "weights": {
+      "precipitation": 0.05,
+      "ndvi": 0.20,
+      "slope": 0.20,
+      "roughness": 0.15,
+      "temperature": 0.10,
+      "temp_range": 0.10,
+      "diurnal_lst": 0.10,
+      "solar": 0.05,
+      "permafrost": 0.05
+    },
+    "mission_context": "Solar power station and comms relay hub for Artemis base",
+    "key_science_questions": [
+      "Solar illumination continuity",
+      "Slope stability for structures",
+      "Regolith bearing capacity"
+    ]
+  },
+  {
+    "id": "haworth_psr",
+    "name": "Haworth PSR",
+    "body": "moon",
+    "description": "Permanently shadowed region in Haworth crater; among richest predicted water-ice concentrations.",
+    "latitude": -87.5,
+    "longitude": -4.7,
+    "elevation_m": -4500,
+    "criteria": {
+      "precipitation_mm_yr": {"target": 0, "weight": 0.05, "tolerance": 2},
+      "vegetation_ndvi": {"target": 0.0, "weight": 0.20, "tolerance": 0.02},
+      "slope_deg": {"target": 4.0, "weight": 0.20, "tolerance": 3.0},
+      "roughness_m": {"target": 0.5, "weight": 0.15, "tolerance": 0.25},
+      "mean_annual_temp_c": {"target": -200, "weight": 0.15, "tolerance": 30},
+      "annual_temp_range_k": {"target": 10, "weight": 0.08, "tolerance": 5},
+      "lst_diurnal_range_k": {"target": 5, "weight": 0.07, "tolerance": 3},
+      "solar_insolation_kwh_m2_day": {"target": 0.0, "weight": 0.05, "tolerance": 0.2},
+      "geological_context": "psr-crater"
+    },
+    "weights": {
+      "precipitation": 0.05,
+      "ndvi": 0.20,
+      "slope": 0.20,
+      "roughness": 0.15,
+      "temperature": 0.15,
+      "temp_range": 0.08,
+      "diurnal_lst": 0.07,
+      "solar": 0.05,
+      "permafrost": 0.05
+    },
+    "mission_context": "Water ice mining target; ISRU demonstration",
+    "key_science_questions": [
+      "Ice concentration and depth",
+      "Cryogenic volatile trapping",
+      "PSR radiation environment"
+    ]
+  },
+  {
+    "id": "marius_hills",
+    "name": "Marius Hills",
+    "body": "moon",
+    "description": "Largest lunar volcanic dome field; hosts a confirmed lava tube skylight 65 m wide.",
+    "latitude": 14.1,
+    "longitude": -56.8,
+    "elevation_m": 1800,
+    "criteria": {
+      "precipitation_mm_yr": {"target": 0, "weight": 0.08, "tolerance": 5},
+      "vegetation_ndvi": {"target": 0.0, "weight": 0.20, "tolerance": 0.03},
+      "slope_deg": {"target": 6.0, "weight": 0.18, "tolerance": 3.0},
+      "roughness_m": {"target": 0.8, "weight": 0.14, "tolerance": 0.3},
+      "mean_annual_temp_c": {"target": -20, "weight": 0.10, "tolerance": 20},
+      "annual_temp_range_k": {"target": 280, "weight": 0.10, "tolerance": 40},
+      "lst_diurnal_range_k": {"target": 280, "weight": 0.10, "tolerance": 40},
+      "solar_insolation_kwh_m2_day": {"target": 12.0, "weight": 0.05, "tolerance": 2.0},
+      "geological_context": "lava-tube-volcanic"
+    },
+    "weights": {
+      "precipitation": 0.08,
+      "ndvi": 0.20,
+      "slope": 0.18,
+      "roughness": 0.14,
+      "temperature": 0.10,
+      "temp_range": 0.10,
+      "diurnal_lst": 0.10,
+      "solar": 0.05,
+      "permafrost": 0.05
+    },
+    "mission_context": "Lava tube exploration; radiation-shielded habitat candidate",
+    "key_science_questions": [
+      "Lava tube extent and stability",
+      "Subsurface thermal environment",
+      "Volcanic stratigraphy"
+    ]
+  }
+]

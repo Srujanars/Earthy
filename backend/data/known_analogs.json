@@ -1,0 +1,12 @@
+[
+  {"pair_id": "KA-001", "earth_site": "Atacama Desert, Chile", "planetary_site": "Jezero Crater, Mars", "reference": "Navarro-González et al. 2003, Science", "analog_type": "hyperarid-lacustrine"},
+  {"pair_id": "KA-002", "earth_site": "Antarctic Dry Valleys", "planetary_site": "Gale Crater, Mars", "reference": "McKay et al. 1992, Science", "analog_type": "polar-periglacial"},
+  {"pair_id": "KA-003", "earth_site": "Devon Island, Canada", "planetary_site": "Lunar South Pole", "reference": "Lee 1997, Meteoritics & Planetary Science", "analog_type": "polar-impact-crater"},
+  {"pair_id": "KA-004", "earth_site": "Svalbard, Norway", "planetary_site": "Haworth PSR, Moon", "reference": "Cousins & Crawford 2011, Astrobiology", "analog_type": "polar-permafrost"},
+  {"pair_id": "KA-005", "earth_site": "Lanzarote Lava Fields, Spain", "planetary_site": "Marius Hills, Moon", "reference": "Léveillé & Datta 2010, Planetary & Space Science", "analog_type": "lava-tube-volcanic"},
+  {"pair_id": "KA-006", "earth_site": "Mauna Kea Summit, Hawaii", "planetary_site": "Olympus Mons, Mars", "reference": "Grasby et al. 2014, Astrobiology", "analog_type": "shield-volcano-summit"},
+  {"pair_id": "KA-007", "earth_site": "Namib Desert, Namibia", "planetary_site": "Valles Marineris, Mars", "reference": "Patel et al. 2003, IJA", "analog_type": "hyperarid-aeolian"},
+  {"pair_id": "KA-008", "earth_site": "Qaidam Basin, China", "planetary_site": "Gale Crater, Mars", "reference": "Wang et al. 2018, Astrobiology", "analog_type": "hypersaline-lacustrine"},
+  {"pair_id": "KA-009", "earth_site": "Iceland Volcanic Fields", "planetary_site": "Marius Hills, Moon", "reference": "Cousins 2015, Current Biology", "analog_type": "basaltic-volcanic"},
+  {"pair_id": "KA-010", "earth_site": "Greenland Ice Sheet", "planetary_site": "Lunar South Pole", "reference": "Lucchitta 1981, JGR", "analog_type": "polar-ice-sheet"}
+]
